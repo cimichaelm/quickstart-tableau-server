@@ -312,7 +312,7 @@ Resources:
               - DefaultConfiguration
               - MachineConfiguration
               - SystemVolumeSize
-        - DeviceName: /dev/sdb1
+        - DeviceName: /dev/sdf
           Ebs:
             VolumeType: gp2
             VolumeSize: !FindInMap
