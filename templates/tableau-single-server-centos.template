@@ -312,6 +312,13 @@ Resources:
               - DefaultConfiguration
               - MachineConfiguration
               - SystemVolumeSize
+        - DeviceName: /dev/sdb1
+          Ebs:
+            VolumeType: gp2
+            VolumeSize: !FindInMap
+              - DefaultConfiguration
+              - MachineConfiguration
+              - DataVolumeSize
       EbsOptimized: true
       KeyName: !Ref 'KeyPairName'
       UserData: !Base64
